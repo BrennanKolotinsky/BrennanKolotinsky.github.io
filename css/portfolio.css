@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+}
+
+#nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid black;
+  z-index: 1;
+}
+
+/*Welcome Section*/
+body {
+  margin: 0;
+}
+
+#nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid black;
+  z-index: 1;
+}
+
+/*Welcome Section*/
+#welcome-section {
+  background-color: orange;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+a {
+  color: black;
+}
+
+#name:hover {
+  background-color: white;
+  border: 1px solid black;
+}
+
+/*Project Section*/
+h2 {
+  text-align: center;
+  padding: 100px;
+}
+
+#projects {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-row-gap: 24px;
+  grid-column-gap: 48px;
+  justify-items: center;
+  align-items: center;
+}
+
+.project-class {
+  width: 40vw;
+  height: 40vw;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.project-tile:nth-of-type(odd) {
+  justify-self: end;
+}
+
+.project-tile:nth-of-type(even) {
+  justify-self: start;  
+}
+
+p {
+  border: 1px solid black;
+  text-align: center;
+  background-color: lightblue;
+  font-weight: bold;
+  color: black;
+}
+
+p:hover {
+  background: lightgrey;
+}
+
+a {
+  text-decoration: none;  
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+#project-section {
+  padding-bottom: 100px;
+}
+
+/*Connect Section*/
+#connect-section {
+  background-color: lightgreen;
+  border-top: 1px solid black;
+  width: 100%;
+  height: 100%;
+}
+
+#social-media {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 128px;
+  margin-bottom: 50px;
+  justify-content: space-around;
+}
+
+#top-nav {
+  text-align: center;
+  background-color: lime;
+  height: 100%;
+  border-top: 1px solid black;
+}
+
+/*for scaling down*/
+@media only screen and (max-width: 1000px) {  
+  #projects {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #social-media {
+    font-size: 64px;
+  }
+  
+  h1 {
+    font-size: 20px;
+  }
+  
+  #projects {
+    font-size: 12px;
+  }
+  
+  .project-class {
+    width: 80vw;
+    height: 80vw;
+  }
+}
+
+/*for phones*/
+@media only screen and (max-width: 1000px), screen and (max-height: 500px) {  
+  
+  h2 {
+    padding: 50px;
+  }
+  
+  #projects {
+  margin-top: 6px;
+  grid-row-gap: 6px;
+  grid-column-gap: 24px;
+  }
+    
+  #project-section {
+    padding-bottom: 100px;
+  }
+  
+  /*this is very necessary*/
+  #welcome-section {
+    height: 550px;
+  }
+}
